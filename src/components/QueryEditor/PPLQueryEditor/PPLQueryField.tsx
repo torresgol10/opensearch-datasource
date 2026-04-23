@@ -52,6 +52,7 @@ export const PPLQueryField = (props: CodeEditorProps) => {
         query: defaultPPLQuery,
       });
     }
+    // Run only on initial mount to seed a default query when the editor starts empty.
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
